@@ -7,7 +7,13 @@ const App = () => {
         hello: "Soy componente de clase",
         subText: "Soy el hijo de Class Component"
     }
-    return <Perritos />
+    return( 
+    <div>
+        <Keys />
+        <Perritos />
+    </div>
+    )
+    
 }
 
 export default App
