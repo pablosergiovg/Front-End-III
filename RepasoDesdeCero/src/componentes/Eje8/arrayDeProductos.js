@@ -1,0 +1,1 @@
+export const productos = ["harina de arepa", "mantequilla", "queso", "jamón", "malta"];
