@@ -44,8 +44,9 @@ const Container = ({inputValues, setInputValues, handleSubmit, handleVaciarForm}
             <span>Registrate</span>
             <Form id="form_camada" onSubmit={handleSubmit}>
                 {
-                    arrInputValues.map((tipoInupt) => (
+                    arrInputValues.map((tipoInupt, index) => (
                     <Input
+                        key={tipoInupt}
                         value={inputValues[tipoInupt]}
                         onChange={(e) => setInputValues({... inputValues, [tipoInupt]: e.target.value})}
                         placeholder={tipoInupt}

@@ -14,7 +14,7 @@ const CompPokemon = () => {
       {
         tiposDePokemon.map((tipo, index) => (
           <CompTarjeta 
-            key={Pokemon[tipo].id}
+            key={index + Pokemon[tipo]}
             data={Pokemon[tipo]}
           />
         ))

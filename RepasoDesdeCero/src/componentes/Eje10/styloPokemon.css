@@ -1,0 +1,20 @@
+.containerPokemon{
+    border: 1px solid green;
+    border-radius: 10px;
+    width: 240px;
+    text-align: center;
+    padding: 20px;
+}
+
+.imgPokemon{
+    width: 220px;
+}
+
+.divBotones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.divBotones button{
+    background-color: aquamarine;
+}
