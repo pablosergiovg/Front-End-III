@@ -12,14 +12,14 @@ export default class CicloDeVidaCClase extends Component {
     }
 
     incrementCount = () => {
-      console.log("incrementando");
-      console.log(this.state.index);
+      //console.log("incrementando");
+      //console.log(this.state.index);
         this.setState({ index: this.state.index + 1})
     }
 
     decrementCount = () => {
-      console.log("decrementando");
-      console.log(this.state.index);
+      //console.log("decrementando");
+      //console.log(this.state.index);
         this.setState({ index: this.state.index - 1})
     }
 
@@ -32,7 +32,7 @@ export default class CicloDeVidaCClase extends Component {
     }
 
     componentDidUpdate(prevProps, prevState){
-      console.log(prevState);
+      //console.log(prevState);
       if(prevState.index !== this.state.index){
         this.setState({
           imagen: arrayPokemon[(this.state.index % arrayPokemon.length)].avatar,
