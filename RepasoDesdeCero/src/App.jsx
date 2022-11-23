@@ -11,8 +11,8 @@ import LocalApp from "./componentes/Eje7/LocalApp"
 import LocalAppEje8 from "./componentes/Eje8/LocalAppEje8"
 import LocalAppEje9 from "./componentes/Eje9/LocalAppEje9"
 import CicloDeVidaCClase from './componentes/Eje10/CicloDeVidaCClase'
-import CicloDeVidaClaseAsincrona from './componentes/Eje11/CicloDeVidaClaseAsincrona'
-import CicloDeVidaFuncionalAsincronico from './componentes/Eje11/CicloDeVidaFuncionalAsincronico'
+import CicloDeVidaClaseAsincrona from './componentes/Eje11-Eje12/CicloDeVidaClaseAsincrona'
+import CicloDeVidaFuncionalAsincronico from './componentes/Eje11-Eje12/CicloDeVidaFuncionalAsincronico'
 
 
 function App() {

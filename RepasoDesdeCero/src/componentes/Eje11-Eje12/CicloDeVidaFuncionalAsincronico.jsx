@@ -20,7 +20,7 @@ const CicloDeVidaFuncionalAsincronico = () => {
     <Fragment>
         <p>---Eje.12---CicloDeVidaAsincrona CompFuncional---</p>
         <div>
-            <img src={personaje?.image} alt="img" />
+            <img src={personaje?.image} alt={personaje?.name} />
             <h2>{personaje?.name}</h2>
         </div>
         <button onClick={() => setIndex(index + 1)}>Incrementar</button>

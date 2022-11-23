@@ -20,7 +20,10 @@ export default class CicloDeVidaCClase extends Component {
     decrementCount = () => {
       //console.log("decrementando");
       //console.log(this.state.index);
+      if(this.state.index > 0){
         this.setState({ index: this.state.index - 1})
+      }
+        
     }
 
     componentDidMount(){
@@ -48,7 +51,7 @@ export default class CicloDeVidaCClase extends Component {
       <Fragment>
         <p>---Eje.10---CicloDeVida CompClase---</p>
         <div className="containerPokemon">
-          <img className='imgPokemon' src={this.state.imagen} alt={this.  state.nombre} />
+          <img className='imgPokemon' src={this.state.imagen} alt={this.state.nombre} />
           <h1>{this.state.nombre}</h1>
           <div className='divBotones'>
               <button onClick={() => this.decrementCount()}>Prev</button>

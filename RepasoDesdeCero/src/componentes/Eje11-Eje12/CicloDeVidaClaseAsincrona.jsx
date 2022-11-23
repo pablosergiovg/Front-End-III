@@ -25,9 +25,12 @@ export default class CicloDeVidaClaseAsincrona extends Component {
     }
 
     decrementarIndex = () => {
-        this.setState({
-            index: this.state.index - 1
-        })
+        if(this.state.index > 1){
+            this.setState({
+                index: this.state.index - 1
+            })
+        }
+        
     }
 
     componentDidMount(){
@@ -47,7 +50,7 @@ export default class CicloDeVidaClaseAsincrona extends Component {
     <Fragment>
         <p>---Eje.11---CicloDeVidaAsincrona CompClase---</p>
         <div>
-            <img src={this.state.personaje?.image} alt="" />
+            <img src={this.state.personaje?.image} alt={this.state.personaje?.name} />
             <h2>{this.state.personaje?.name}</h2>
             <button onClick={() => this.incrementarIndex()}>Siguiente</button>
             <button onClick={() => this.decrementarIndex()}>Anterior</button>
